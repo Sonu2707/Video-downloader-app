@@ -8,7 +8,7 @@ async function startDownload() {
     progressBar.style.display = "block";
     progressBar.value = 20;
 
-    const res = await fetch("http://localhost:8000/download/", {
+    const res = await fetch("https://video-downloader-app-ub63.onrender.com/download/", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({url: url, quality: quality})
