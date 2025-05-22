@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+    <div class="container">
+        <h1>Video & Audio Downloader</h1>
+        <input type="text" id="urlInput" placeholder="Paste video URL here...">
+        <select id="quality">
+            <option value="best">Best Quality</option>
+            <option value="worst">Lowest Quality</option>
+            <option value="audio">Audio Only (mp3)</option>
+        </select>
+        <button onclick="startDownload()">Download</button>
+        <progress id="progressBar" value="0" max="100" style="display:none;"></progress>
+        <div id="result"></div>
+        <button onclick="toggleTheme()">Toggle Dark/Light</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
